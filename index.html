@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Partner - Hangman Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- Overlay for Game Results -->
+        <div id="game-modal" class="hidden">
+            <div class="modal-content">
+                <h2 id="modal-title"></h2>
+                <p id="modal-message"></p>
+                <button id="modal-reset-btn">Play Again</button>
+            </div>
+        </div>
+
+        <h1>Hangman</h1>
+
+        <!-- Drawing Area -->
+        <div id="visual-container">
+            <canvas id="hangman-canvas" width="200" height="250"></canvas>
+        </div>
+
+        <!-- Word Display Area -->
+        <div id="word-display"></div>
+
+        <!-- Letter Buttons Area -->
+        <div id="keyboard"></div>
+
+        <!-- Controls -->
+        <button id="reset-btn">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
